@@ -14,6 +14,8 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
 }
 #display {
   display: grid;
