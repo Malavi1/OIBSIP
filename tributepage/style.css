@@ -28,6 +28,10 @@ h6 {
   width: 300px;
   font-size: larger;
 }
+h6 span {
+  color: red;
+  font-family: monospace;
+}
 
 .footer {
   width: 700px;
