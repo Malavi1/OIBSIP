@@ -22,9 +22,6 @@ unChecked.addEventListener(
       e.target.classList.toggle("checked");
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
-      let li = document.createElement("li");
-      li.textContent = unChecked.target;
-      checked.appendChild(li);
     }
   },
   false

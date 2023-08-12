@@ -40,7 +40,7 @@ button {
   outline: none;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgb(65, 185, 65);
+  background-color: rgb(218, 29, 29);
   cursor: pointer;
 }
 #checked-unchecked {
@@ -107,4 +107,10 @@ button {
   font-size: 22px;
   line-height: 40px;
   text-align: center;
+}
+h6 {
+  padding: 20px;
+  background-color: green;
+  border-radius: 20px 10px;
+  font-size: 20px;
 }
