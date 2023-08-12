@@ -43,7 +43,7 @@ def register():
     userName = input("Enter the your user name : ")
 
     if userName in user_credentials:
-        print("You already REGISTERED please DO check once")
+        print("You already REGISTERED please DO check once 🤔")
     password = input("Create a strong password🤫 : ")
 
     hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
