@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const unChecked = document.getElementById("unchecked");
 const checked = document.getElementById("checked");
+
 function saveTask() {
   if (inputBox.value === "") {
     alert("You must add something");
@@ -20,6 +21,10 @@ unChecked.addEventListener(
   function (e) {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("checked");
+      e.target.parentElement.remove();
+      let li = document.createElement("li");
+      li.innerHTML = e.target.textContent;
+      checked.appendChild(li);
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
     }

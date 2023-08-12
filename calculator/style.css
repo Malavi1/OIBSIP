@@ -18,13 +18,21 @@ body {
   margin-top: 50px;
 }
 #display {
-  display: grid;
-  grid-template-columns: 270px;
-  grid-template-rows: 70px;
-  justify-content: center;
+  display: flex;
+  flex-direction: flex-end;
+  justify-content: right;
   margin-bottom: 10px;
+  text-align: right;
   border-radius: 5px;
   background-color: rgb(81, 138, 230);
+}
+#display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 
 #buttons {
@@ -46,13 +54,16 @@ button:hover {
   grid-row: 5 / 6;
   grid-column: 3 / 6;
 }
-#display #previous-operator {
-  color: aliceblue;
-  font-size: 1.5rem;
-  margin-left: 14rem;
+/* #display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
-#display #current-operator {
-  color: aliceblue;
-  font-size: 2rem;
-  margin-left: 13rem;
-}
+#display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+} */
