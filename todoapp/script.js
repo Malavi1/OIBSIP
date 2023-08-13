@@ -21,7 +21,7 @@ unChecked.addEventListener(
   function (e) {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("checked");
-      e.target.parentElement.remove();
+
       let li = document.createElement("li");
       li.innerHTML = e.target.textContent;
       checked.appendChild(li);
